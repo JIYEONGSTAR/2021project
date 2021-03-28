@@ -7,7 +7,7 @@ function Navigation() {
   return (
     <nav className="navbar">
       <Link to="/">
-        <h1 className="logo">프로젝트제목넣기</h1>
+        <h1 className="logo">SHARE_BILLAGE</h1>
       </Link>
       <div className="navbar-container">
         <Link to="/" className="nav-link" onClick={() => setThisPage("Home")}>
