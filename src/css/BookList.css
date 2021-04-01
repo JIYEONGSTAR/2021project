@@ -1,5 +1,5 @@
 /*
-.cards {
+.bookList {
   max-width: 90vw;
   margin: 0 auto;
   padding: 30px;
@@ -9,7 +9,7 @@
   justify-content: center;
 }
 
-.cards-items {
+.bookCard {
   height: 400px;
   margin: 10px 1em;
   padding-left: 10px;
@@ -19,22 +19,20 @@
 }
 */
 
-.cards {
+.bookList {
+  background-color: green;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.cards-items {
+.bookCard {
+  width: 400px;
+  height: 500px;
+  margin: 10px 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: blueviolet;
 }
 
-.cards-items__column {
-  text-align: center;
-}
-
-.card_img {
-  width: 150px;
-}
-
-.cards-items__column h3 {
+.bookCard:nth-child(1) {
+  background-color: burlywood;
 }
