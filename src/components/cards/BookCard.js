@@ -3,6 +3,7 @@ import React from "react";
 import "../../css/cards/BookCard.css";
 function BookCard(props) {
   return (
+
     <div class="cards">
       <div class="cards-items">
         <div class="cards-items__column">
@@ -17,7 +18,6 @@ function BookCard(props) {
         </div>
         {/* 이건 프롭스에 따라 고쳐야함 */}
       </div>
-      
 
     </div>
   );
