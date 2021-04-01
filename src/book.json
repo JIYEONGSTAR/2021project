@@ -3,7 +3,7 @@
     "id": 1,
     "title": "윤성우의 열혈 C 프로그래밍",
     "image": "https://bookthumb-phinf.pstatic.net/cover/063/934/06393451.jpg?type=m1&udate=20190821",
-    "author": "<b>윤성우</b>",
+    "author": "윤성우",
     "price": "25000",
     "publisher": "오렌지미디어",
     "pubdate": "20101101",
@@ -11,7 +11,8 @@
     "stock": 5,
     "subject": "IT융합자율학부",
     "class": "C프로그래밍",
-    "professor": "홍성준"
+    "professor": "홍성준",
+    "like": 0
   },
   {
     "id": 2,
@@ -25,7 +26,8 @@
     "stock": 5,
     "subject": "IT융합자율학부",
     "class": "Python 프로그래밍",
-    "professor": "홍은지"
+    "professor": "홍은지",
+    "like": 0
   },
   {
     "id": 3,
@@ -39,7 +41,8 @@
     "stock": 5,
     "subject": "IT융합자율학부",
     "class": "데이터베이스",
-    "professor": "홍은지"
+    "professor": "홍은지",
+    "like": 0
   },
   {
     "id": 4,
@@ -55,7 +58,8 @@
     "stock": 5,
     "subject": "IT융합자율학부",
     "class": "사물인터넷기초",
-    "professor": "유상신"
+    "professor": "유상신",
+    "like": 0
   },
   {
     "id": 5,
@@ -69,7 +73,8 @@
     "stock": 5,
     "subject": "IT융합자율학부",
     "class": "자바프로그래밍",
-    "professor": "이하규"
+    "professor": "이하규",
+    "like": 0
   },
   {
     "id": 6,
@@ -83,7 +88,8 @@
     "stock": 5,
     "subject": "IT융합자율학부",
     "class": "논리회로설계",
-    "professor": "김학수"
+    "professor": "김학수",
+    "like": 0
   },
   {
     "id": 7,
@@ -97,7 +103,8 @@
     "stock": 5,
     "subject": "IT융합자율학부",
     "class": "컴퓨터그래픽스",
-    "professor": "임충규"
+    "professor": "임충규",
+    "like": 0
   },
   {
     "id": 8,
@@ -111,7 +118,8 @@
     "stock": 5,
     "subject": "IT융합자율학부",
     "class": "MFC 프로그래밍",
-    "professor": "김학수"
+    "professor": "김학수",
+    "like": 0
   },
   {
     "id": 9,
@@ -125,7 +133,8 @@
     "stock": 5,
     "subject": "IT융합자율학부",
     "class": "알고리즘",
-    "professor": "문성현 / 노은하"
+    "professor": "문성현 / 노은하",
+    "like": 0
   },
   {
     "id": 10,
@@ -139,7 +148,8 @@
     "stock": 5,
     "subject": "IT융합자율학부",
     "class": "컴퓨터네트워크",
-    "professor": "정연식 / 유상신"
+    "professor": "정연식 / 유상신",
+    "like": 0
   },
   {
     "id": 11,
@@ -153,7 +163,8 @@
     "stock": 5,
     "subject": "IT융합자율학부",
     "class": "인공지능",
-    "professor": "김명철"
+    "professor": "김명철",
+    "like": 0
   },
   {
     "id": 12,
@@ -167,7 +178,8 @@
     "stock": 5,
     "subject": "IT융합자율학부",
     "class": "자료구조",
-    "professor": "노은하"
+    "professor": "노은하",
+    "like": 0
   },
   {
     "id": 13,
@@ -181,7 +193,8 @@
     "stock": 5,
     "subject": "IT융합자율학부",
     "class": "고급Java프로그래밍",
-    "professor": "홍성준"
+    "professor": "홍성준",
+    "like": 0
   },
   {
     "id": 14,
@@ -195,7 +208,8 @@
     "stock": 5,
     "subject": "IT융합자율학부",
     "class": "하이브리드 앱 프로그래밍",
-    "professor": "김명철"
+    "professor": "김명철",
+    "like": 0
   },
   {
     "id": 15,
@@ -209,7 +223,8 @@
     "stock": 5,
     "subject": "IT융합자율학부",
     "class": "디지털통신",
-    "professor": "이종현"
+    "professor": "이종현",
+    "like": 0
   },
   {
     "id": 16,
@@ -221,9 +236,10 @@
     "pubdate": "20201225",
     "isbn": "1197141731 9791197141737",
     "stock": 5,
-    "subject": "인문",
+    "subject": "인문융합자율학부",
     "class": "영어다의어",
-    "professor": "권용현"
+    "professor": "권용현",
+    "like": 0
   },
   {
     "id": 17,
@@ -235,9 +251,10 @@
     "pubdate": "20160225",
     "isbn": "8940291794 9788940291795",
     "stock": 5,
-    "subject": "인문",
+    "subject": "인문융합자율학부",
     "class": "비즈니스일본어",
-    "professor": "요코야마 나호코"
+    "professor": "요코야마 나호코",
+    "like": 0
   },
   {
     "id": 18,
@@ -249,9 +266,10 @@
     "pubdate": "20081222",
     "isbn": "8959956651 9788959956654",
     "stock": 5,
-    "subject": "인문",
+    "subject": "인문융합자율학부",
     "class": "중급중국어",
-    "professor": "장엽"
+    "professor": "장엽",
+    "like": 0
   },
   {
     "id": 19,
@@ -263,9 +281,10 @@
     "pubdate": "20001001",
     "isbn": "8987608166 9788987608167",
     "stock": 5,
-    "subject": "인문",
+    "subject": "인문융합자율학부",
     "class": "중국영화의 이해",
-    "professor": "윤영도"
+    "professor": "윤영도",
+    "like": 0
   },
   {
     "id": 20,
@@ -277,9 +296,10 @@
     "pubdate": "20161110",
     "isbn": "8998444836 9788998444839",
     "stock": 5,
-    "subject": "인문",
+    "subject": "인문융합자율학부",
     "class": "중국어회화 II",
-    "professor": "장엽"
+    "professor": "장엽",
+    "like": 0
   },
   {
     "id": 21,
@@ -291,9 +311,10 @@
     "pubdate": "20190606",
     "isbn": "115664447X 9791156644477",
     "stock": 5,
-    "subject": "미디어컨텐츠",
+    "subject": "미디어콘텐츠융합자율학부",
     "class": "디지털기초디자인",
-    "professor": "박남기"
+    "professor": "박남기",
+    "like": 0
   },
   {
     "id": 22,
@@ -305,9 +326,10 @@
     "pubdate": "20150904",
     "isbn": "8992448279 9788992448277",
     "stock": 5,
-    "subject": "미디어컨텐츠",
+    "subject": "미디어콘텐츠융합자율학부",
     "class": "세계의 신화와 판타지",
-    "professor": "이종승"
+    "professor": "이종승",
+    "like": 0
   },
   {
     "id": 23,
@@ -319,9 +341,10 @@
     "pubdate": "20190823",
     "isbn": "8931556195 9788931556193",
     "stock": 5,
-    "subject": "미디어컨텐츠",
+    "subject": "미디어콘텐츠융합자율학부",
     "class": "디지털 라이팅과 랜더링",
-    "professor": "박남기"
+    "professor": "박남기",
+    "like": 0
   },
   {
     "id": 24,
@@ -333,9 +356,10 @@
     "pubdate": "20190603",
     "isbn": "1162756632 9791162756638",
     "stock": 5,
-    "subject": "미디어컨텐츠",
+    "subject": "미디어콘텐츠융합자율학부",
     "class": "디지털 페인팅",
-    "professor": "이영아"
+    "professor": "이영아",
+    "like": 0
   },
   {
     "id": 25,
@@ -347,9 +371,10 @@
     "pubdate": "20200313",
     "isbn": "1162242906 9791162242902",
     "stock": 5,
-    "subject": "미디어컨텐츠",
+    "subject": "미디어콘텐츠융합자율학부",
     "class": "영상디자인 I",
-    "professor": "이원정"
+    "professor": "이원정",
+    "like": 0
   },
   {
     "id": 26,
@@ -361,9 +386,10 @@
     "pubdate": "20180831",
     "isbn": "1161752021 9791161752020",
     "stock": 5,
-    "subject": "미디어컨텐츠",
+    "subject": "미디어콘텐츠융합자율학부",
     "class": "3D게임제작",
-    "professor": "김인권"
+    "professor": "김인권",
+    "like": 0
   },
   {
     "id": 27,
@@ -375,9 +401,10 @@
     "pubdate": "20120502",
     "isbn": "8986913933 9788986913934",
     "stock": 5,
-    "subject": "미디어컨텐츠",
+    "subject": "미디어콘텐츠융합자율학부",
     "class": "디지털영상촬영Ⅰ",
-    "professor": "김용찬"
+    "professor": "김용찬",
+    "like": 0
   },
   {
     "id": 28,
@@ -389,9 +416,10 @@
     "pubdate": "20020320",
     "isbn": "8946029021 9788946029026",
     "stock": 5,
-    "subject": "미디어컨텐츠",
+    "subject": "미디어콘텐츠융합자율학부",
     "class": "언론의역사",
-    "professor": "김서중"
+    "professor": "김서중",
+    "like": 0
   },
   {
     "id": 29,
@@ -403,9 +431,10 @@
     "pubdate": "20100226",
     "isbn": "8946052295 9788946052291",
     "stock": 5,
-    "subject": "미디어컨텐츠",
+    "subject": "미디어콘텐츠융합자율학부",
     "class": "대중문화론",
-    "professor": "김서중"
+    "professor": "김서중",
+    "like": 0
   },
   {
     "id": 30,
@@ -417,9 +446,10 @@
     "pubdate": "20120110",
     "isbn": "898394692X 9788983946928",
     "stock": 5,
-    "subject": "미디어컨텐츠",
+    "subject": "미디어콘텐츠융합자율학부",
     "class": "소셜미디어 이론과 활용",
-    "professor": "이진순"
+    "professor": "이진순",
+    "like": 0
   },
   {
     "id": 31,
@@ -433,9 +463,10 @@
     "pubdate": "20170830",
     "isbn": "899971327X 9788999713279",
     "stock": 5,
-    "subject": "사회",
+    "subject": "사회융합자율학부",
     "class": "인간행동과사회환경",
-    "professor": "선미정"
+    "professor": "선미정",
+    "like": 0
   },
   {
     "id": 32,
@@ -447,9 +478,10 @@
     "pubdate": "20120115",
     "isbn": "895565443X 9788955654431",
     "stock": 5,
-    "subject": "사회",
+    "subject": "사회융합자율학부",
     "class": "사회복지조사론",
-    "professor": "정원오"
+    "professor": "정원오",
+    "like": 0
   },
   {
     "id": 33,
@@ -461,9 +493,10 @@
     "pubdate": "20160305",
     "isbn": "8930088597 9788930088596",
     "stock": 5,
-    "subject": "사회",
+    "subject": "사회융합자율학부",
     "class": "사회복지행정론",
-    "professor": "황인매"
+    "professor": "황인매",
+    "like": 0
   },
   {
     "id": 34,
@@ -475,9 +508,10 @@
     "pubdate": "20200210",
     "isbn": "8999409740 9788999409745",
     "stock": 5,
-    "subject": "사회",
+    "subject": "사회융합자율학부",
     "class": "학교사회복지",
-    "professor": "최경옥"
+    "professor": "최경옥",
+    "like": 0
   },
   {
     "id": 35,
@@ -489,13 +523,14 @@
     "pubdate": "20210220",
     "isbn": "8999722988 9788999722981",
     "stock": 5,
-    "subject": "사회",
+    "subject": "사회융합자율학부",
     "class": "사회복지와 문화다양성",
-    "professor": "양경은"
+    "professor": "양경은",
+    "like": 0
   },
   {
     "id": 36,
-    "title": "정신보건의 이해와 실천패러다임</b>",
+    "title": "정신보건의 이해와 실천패러다임",
     "image": "https://bookthumb-phinf.pstatic.net/cover/025/156/02515644.jpg?type=m1&udate=20091224",
     "author": "이용표",
     "price": "20000",
@@ -503,9 +538,10 @@
     "pubdate": "20060828",
     "isbn": "899186211X 9788991862111",
     "stock": 5,
-    "subject": "사회",
+    "subject": "사회융합자율학부",
     "class": "정신보건사회복지론",
-    "professor": "서진환"
+    "professor": "서진환",
+    "like": 0
   },
   {
     "id": 37,
@@ -517,9 +553,10 @@
     "pubdate": "20190211",
     "isbn": "1185994599 9791185994598",
     "stock": 5,
-    "subject": "사회",
+    "subject": "사회융합자율학부",
     "class": "미시경제학",
-    "professor": "신현준"
+    "professor": "신현준",
+    "like": 0
   },
   {
     "id": 38,
@@ -531,9 +568,10 @@
     "pubdate": "20171030",
     "isbn": "1186674458 9791186674451",
     "stock": 5,
-    "subject": "사회",
+    "subject": "사회융합자율학부",
     "class": "경제수학",
-    "professor": "임동민"
+    "professor": "임동민",
+    "like": 0
   },
   {
     "id": 39,
@@ -545,13 +583,14 @@
     "pubdate": "20210228",
     "isbn": "8962381524 9788962381528",
     "stock": 5,
-    "subject": "사회",
+    "subject": "사회융합자율학부",
     "class": "한국경제사",
-    "professor": "이상철"
+    "professor": "이상철",
+    "like": 0
   },
   {
     "id": 40,
-    "title": "<b>민주주의의 수수께끼</b> (Setting the People Free : The Story of Democracy)",
+    "title": "민주주의의 수수께끼 (Setting the People Free : The Story of Democracy)",
     "image": "https://bookthumb-phinf.pstatic.net/cover/088/115/08811564.jpg?type=m1&udate=20200229",
     "author": "존 던",
     "price": "18000",
@@ -559,9 +598,10 @@
     "pubdate": "20150223",
     "isbn": "8964372239 9788964372234",
     "stock": 5,
-    "subject": "사회",
+    "subject": "사회융합자율학부",
     "class": "민주주의론",
-    "professor": "문지영"
+    "professor": "문지영",
+    "like": 0
   },
   {
     "id": 41,
@@ -573,9 +613,10 @@
     "pubdate": "20190131",
     "isbn": "894200895X 9788942008957",
     "stock": 5,
-    "subject": "사회",
+    "subject": "사회융합자율학부",
     "class": "마케팅",
-    "professor": "이상훈"
+    "professor": "이상훈",
+    "like": 0
   },
   {
     "id": 42,
@@ -587,12 +628,13 @@
     "pubdate": "20190910",
     "isbn": "1130305902 9791130305905",
     "stock": 5,
-    "subject": "사회",
+    "subject": "사회융합자율학부",
     "class": "소비자행동및소비자트랜드분석",
-    "professor": "이상훈"
+    "professor": "이상훈",
+    "like": 0
   },
   {
-    "id": 42,
+    "id": 43,
     "title": "서양사 강의",
     "image": "https://bookthumb-phinf.pstatic.net/cover/067/147/06714716.jpg?type=m1&udate=20110909",
     "author": "배영수",
@@ -601,12 +643,13 @@
     "pubdate": "20110820",
     "isbn": "8946044748 9788946044746",
     "stock": 5,
-    "subject": "교양인문",
+    "subject": "교양",
     "class": "서양사의 이해",
-    "professor": "최재호"
+    "professor": "최재호",
+    "like": 0
   },
   {
-    "id": 43,
+    "id": 44,
     "title": "토마토 토익 BASIC RC (2018 토마토 토익 , 토익이 쉬워지는)",
     "image": "https://bookthumb-phinf.pstatic.net/cover/137/084/13708468.jpg?type=m1&udate=20201215",
     "author": "능률영어교육연구소|이미영|한윤희|이경화|이은비",
@@ -615,12 +658,13 @@
     "pubdate": "20180615",
     "isbn": "112532175X 9791125321750",
     "stock": 5,
-    "subject": "교양인문",
+    "subject": "교양",
     "class": "실용영어(TOEIC) I",
-    "professor": "오세풍"
+    "professor": "오세풍",
+    "like": 0
   },
   {
-    "id": 44,
+    "id": 45,
     "title": "텍스트, 하이퍼텍스트, 하이퍼미디어 (디지털 시대의 새로운 문예학)",
     "image": "https://bookthumb-phinf.pstatic.net/cover/116/626/11662679.jpg?type=m1&udate=20170222",
     "author": "유현주",
@@ -629,12 +673,13 @@
     "pubdate": "20170217",
     "isbn": "895464449X 9788954644495",
     "stock": 5,
-    "subject": "교양인문",
+    "subject": "교양",
     "class": "디지털과스토리텔링",
-    "professor": "유승호"
+    "professor": "유승호",
+    "like": 0
   },
   {
-    "id": 45,
+    "id": 46,
     "title": "단박에 한국사 현대편 (역사 무식자도 쉽게 맥을 잡는)",
     "image": "https://bookthumb-phinf.pstatic.net/cover/128/363/12836390.jpg?type=m1&udate=20200520",
     "author": "심용환",
@@ -643,12 +688,13 @@
     "pubdate": "20171206",
     "isbn": "1162201436 9791162201435",
     "stock": 5,
-    "subject": "교양인문",
+    "subject": "교양",
     "class": "헌법과 한국현대사",
-    "professor": "심용환"
+    "professor": "심용환",
+    "like": 0
   },
   {
-    "id": 46,
+    "id": 47,
     "title": "현대 철학의 거장들",
     "image": "https://bookthumb-phinf.pstatic.net/cover/069/999/06999948.jpg?type=m1&udate=20210304",
     "author": "박찬국",
@@ -657,12 +703,13 @@
     "pubdate": "20120910",
     "isbn": "8961471678 9788961471671",
     "stock": 5,
-    "subject": "교양인문",
+    "subject": "교양",
     "class": "철학이란 무엇인가?",
-    "professor": "김시형"
+    "professor": "김시형",
+    "like": 0
   },
   {
-    "id": 47,
+    "id": 48,
     "title": "흔들리는 20대의 사진일기",
     "image": "https://bookthumb-phinf.pstatic.net/cover/117/508/11750834.jpg?type=m1&udate=20170409",
     "author": "유요섭",
@@ -671,13 +718,14 @@
     "pubdate": "20170224",
     "isbn": "1127210947 9791127210946",
     "stock": 5,
-    "subject": "교양인문",
+    "subject": "교양",
     "class": "20대의 심리",
-    "professor": "이주협"
+    "professor": "이주협",
+    "like": 0
   },
   {
-    "id": 48,
-    "title": "<b>오늘의 세계 분쟁</b>(개정판 2판) (국제 <b>분쟁</b> 전문가 김재명의 전선 리포트)",
+    "id": 49,
+    "title": "오늘의 세계 분쟁(개정판 2판) (국제 분쟁 전문가 김재명의 전선 리포트)",
     "image": "https://bookthumb-phinf.pstatic.net/cover/180/595/18059539.jpg?type=m1&udate=20210316",
     "author": "김재명",
     "price": "22800",
@@ -685,12 +733,13 @@
     "pubdate": "20210305",
     "isbn": "1190498103 9791190498104",
     "stock": 5,
-    "subject": "교양사회",
+    "subject": "교양",
     "class": "국제질서의 이해",
-    "professor": "김재명"
+    "professor": "김재명",
+    "like": 0
   },
   {
-    "id": 49,
+    "id": 50,
     "title": "이지상 사람을 노래하다",
     "image": "https://bookthumb-phinf.pstatic.net/cover/062/503/06250346.jpg?type=m1&udate=20120318",
     "author": "이지상",
@@ -699,12 +748,13 @@
     "pubdate": "20100317",
     "isbn": "8964360087 9788964360088",
     "stock": 5,
-    "subject": "교양사회",
+    "subject": "교양",
     "class": "노래로 보는 한국사회",
-    "professor": "이기형"
+    "professor": "이기형",
+    "like": 0
   },
   {
-    "id": 50,
+    "id": 51,
     "title": "필란트로피의 이해와 실천",
     "image": "https://bookthumb-phinf.pstatic.net/cover/094/271/09427125.jpg?type=m1&udate=20160115",
     "author": "BEKAY AHN",
@@ -713,12 +763,13 @@
     "pubdate": "20150810",
     "isbn": "1195142021 9791195142026",
     "stock": 5,
-    "subject": "교양사회",
+    "subject": "교양",
     "class": "필란트로피의 이해와 실천",
-    "professor": "김현수"
+    "professor": "김현수",
+    "like": 0
   },
   {
-    "id": 51,
+    "id": 52,
     "title": "사회적 기업가를 위한 디자인 접근법",
     "image": "https://bookthumb-phinf.pstatic.net/cover/088/414/08841463.jpg?type=m1&udate=20180901",
     "author": "박재환|전혜진",
@@ -727,12 +778,13 @@
     "pubdate": "20150227",
     "isbn": "1185059407 9791185059402",
     "stock": 5,
-    "subject": "교양사회",
+    "subject": "교양",
     "class": "디자인씽킹 프로젝트",
-    "professor": "염준규"
+    "professor": "염준규",
+    "like": 0
   },
   {
-    "id": 52,
+    "id": 53,
     "title": "야누스의 과학 (20세기 과학기술의 사회사)",
     "image": "https://bookthumb-phinf.pstatic.net/cover/051/264/05126403.jpg?type=m1&udate=20190824",
     "author": "김명진",
@@ -741,12 +793,13 @@
     "pubdate": "20081128",
     "isbn": "8958283254 9788958283256",
     "stock": 5,
-    "subject": "교양자연",
+    "subject": "교양",
     "class": "과학기술과 사회",
-    "professor": "김병수"
+    "professor": "김병수",
+    "like": 0
   },
   {
-    "id": 53,
+    "id": 54,
     "title": "이산수학 (컴퓨팅 사고력을 키우는)",
     "image": "https://bookthumb-phinf.pstatic.net/cover/115/443/11544330.jpg?type=m1&udate=20171016",
     "author": "박주미",
@@ -755,12 +808,13 @@
     "pubdate": "20170114",
     "isbn": "1156643058 9791156643050",
     "stock": 5,
-    "subject": "교양자연",
+    "subject": "교양",
     "class": "이산수학",
-    "professor": "윤명호"
+    "professor": "윤명호",
+    "like": 0
   },
   {
-    "id": 54,
+    "id": 55,
     "title": "어쩌면 가장 위험한 이야기",
     "image": "https://bookthumb-phinf.pstatic.net/cover/159/123/15912383.jpg?type=m1&udate=20191207",
     "author": "박병상",
@@ -769,12 +823,13 @@
     "pubdate": "20191210",
     "isbn": "8993690685 9788993690682",
     "stock": 5,
-    "subject": "교양자연",
+    "subject": "교양",
     "class": "기후 변화의 이해",
-    "professor": "박병상"
+    "professor": "박병상",
+    "like": 0
   },
   {
-    "id": 55,
+    "id": 56,
     "title": "빅뱅에서 인간까지 (우주, 생명, 문명)",
     "image": "https://bookthumb-phinf.pstatic.net/cover/127/438/12743825.jpg?type=m1&udate=20171110",
     "author": "마그나 히스토리아 연구회",
@@ -783,8 +838,9 @@
     "pubdate": "20171110",
     "isbn": "8936811096 9788936811099",
     "stock": 5,
-    "subject": "교양자연",
+    "subject": "교양",
     "class": "빅뱅에서 인간까지",
-    "professor": "김강배"
+    "professor": "김강배",
+    "like": 0
   }
 ]
