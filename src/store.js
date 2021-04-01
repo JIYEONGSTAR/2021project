@@ -6,36 +6,35 @@ function reducer(state, action) {
     let mockData = _data.concat();
     return {
       selected_id: 1,
+      selected_subject: "",
+      bookListBySubject: [],
       myBookList: [],
       data: mockData,
     };
   }
   let newData = [...state.data];
   let newMyBookList = [...state.myBookList];
+  let newBookListBySubject = [...state.bookListBySubject];
   let newState;
+  let newSubject = { selected_subject: action.subject };
   let newID = { selected_id: action.id }; //현재 선택한 값
   let targetData = newData.find((currentData) => {
     return currentData.id === newID.selected_id;
   });
-  let targetIndex = newData.findIndex(
+  let targetIndex = newMyBookList.findIndex(
     (currentData) => currentData.id === newID.selected_id
   );
   let existData = newMyBookList.find((currentData) => {
     return currentData.id === newID.selected_id;
   });
+  let targetDataBySubject = newData.filter((currentData) => {
+    return currentData.subject === newSubject.selected_subject;
+  });
   switch (action.type) {
-    case "liie":
+    case "like":
       targetData.like += 1;
       break;
     case "addMyList":
-      // newMyBookList.push(targetData);
-      // targetData.stock -= 1;
-      // if (existData === undefined) {
-      //   newMyBookList.push(targetData);
-      //   targetData.stock -= 1;
-      // } else {
-      //   alert("이미 담겨 있습니다.");
-      // }
       if (targetData.stock <= 0) {
         alert("더이상 빌릴 수 없습니다");
       } else if (existData === undefined) {
@@ -50,13 +49,19 @@ function reducer(state, action) {
       newMyBookList.splice(targetIndex, 1);
       targetData.stock += 1;
       break;
-    case "popStock":
-      targetData.stock -= 1;
+    case "handleSubject":
+      newBookListBySubject = [];
+      newBookListBySubject.push(targetDataBySubject);
       break;
     default:
       break;
   }
-  newState = { ...state, data: newData, myBookList: newMyBookList };
+  newState = {
+    ...state,
+    data: newData,
+    myBookList: newMyBookList,
+    bookListBySubject: newBookListBySubject,
+  };
   return newState;
 }
 
