@@ -1,5 +1,6 @@
 import React from "react";
 import BookList from "../components/BookList";
+import "../css/cards/BookCard.css";
 
 function Main(props) {
   // const []=useState(get);
@@ -12,7 +13,7 @@ function Main(props) {
   };
   return (
     <div className="showBook">
-      <BookList data={data} onAdd={handleAdd} />
+      <BookList className="booklist" data={data} onAdd={handleAdd} />
     </div>
   );
 }
