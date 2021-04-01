@@ -34,6 +34,13 @@ function Navigation() {
         >
           signup
         </Link>
+        <Link
+          to="/notice"
+          className="nav-link"
+          onClick={() => setThisPage("notice")}
+        >
+          notice
+        </Link>
       </div>
       <Link
         to="/login"

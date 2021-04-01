@@ -5,7 +5,7 @@ import MyPage from "./pages/MyPage";
 import Login from "./pages/Login";
 import Setting from "./pages/Setting";
 import Signup from "./pages/Signup";
-
+import Notice from "./pages/Notice";
 function App() {
   return (
     <>
@@ -17,6 +17,7 @@ function App() {
           <Route path="/login" exact component={Login} />
           <Route path="/signup" exact component={Signup} />
           <Route path="/setting" exact component={Setting} />
+          <Route path="/notice" exact component={Notice} />
         </Switch>
       </Router>
     </>

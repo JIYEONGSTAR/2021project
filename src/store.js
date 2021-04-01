@@ -1,5 +1,5 @@
 import { createStore } from "redux";
-import _data from "./MOCK_DATA.json";
+import _data from "./book.json";
 
 function reducer(state, action) {
   if (state === undefined) {
@@ -28,15 +28,27 @@ function reducer(state, action) {
       targetData.like += 1;
       break;
     case "addMyList":
-      if (existData === undefined) {
+      // newMyBookList.push(targetData);
+      // targetData.stock -= 1;
+      // if (existData === undefined) {
+      //   newMyBookList.push(targetData);
+      //   targetData.stock -= 1;
+      // } else {
+      //   alert("이미 담겨 있습니다.");
+      // }
+      if (targetData.stock <= 0) {
+        alert("더이상 빌릴 수 없습니다");
+      } else if (existData === undefined) {
         newMyBookList.push(targetData);
+        targetData.stock -= 1;
       } else {
-        alert("이미 담겨 있습니다.");
+        alert("이미 담겨 잇습니다.");
       }
       // newMyBookList.push(targetData);
       break;
     case "removeMyList":
       newMyBookList.splice(targetIndex, 1);
+      targetData.stock += 1;
       break;
     case "popStock":
       targetData.stock -= 1;

@@ -9,6 +9,7 @@ function BookCard(props) {
       <p>{props.professor}</p>
       <p>{props.className}</p>
       {/* 이건 프롭스에 따라 고쳐야함 */}
+      {/* <button onClick={()=>props.onChange}></button> */}
     </div>
   );
 }
