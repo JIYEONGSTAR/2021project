@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../../css/Navigation.css";
 
 function Navigation() {
+  
   const [thisPage, setThisPage] = useState("");
   return (
     <nav className="navbar">

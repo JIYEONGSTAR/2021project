@@ -23,7 +23,8 @@ function BookList(props) {
   let society = "사회융합자율학부";
   let mediacontents = "미디어콘텐츠융합자율학부";
   let culture = "교양";
-  return(<>
+  return(
+  <div>
       <div className="subjectList">
         <Link to="/booklist/humanities">
           <p value="subject" onClick={() => props.handleSubject(humanities)}> 
@@ -77,7 +78,7 @@ function BookList(props) {
     
   
   )
-  }</div></>)
+  }</div></div>)
 }
 
 export default BookList;
