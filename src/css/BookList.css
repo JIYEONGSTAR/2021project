@@ -18,14 +18,30 @@
   flex: 0 1 20%;
 }
 */
+body {
+  background-color: #FCF6F5;
+}
 
+.bookWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
 
-body > div > div:last-child {
+.subjectList {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.subjectList p {
+  margin: 0 20px;
+}
+
+.bookWrap:last-child {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(auto, 1fr);
-  column-gap: 10px;
-  row-gap: 10px;
 }
 
 
@@ -35,17 +51,14 @@ body > div > div:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: burlywood;
 }
 
 .bookCard {
   width: 300px;
   height: 400px;
 
-  background-color: green;
-
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
   flex-direction: column;
 }
