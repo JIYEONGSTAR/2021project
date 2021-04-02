@@ -21,11 +21,13 @@ function BookList(props) {
   let society = "사회융합자율학부";
   let mediacontents = "미디어콘텐츠융합자율학부";
   let culture = "교양";
-  return (
-    <>
-      <div>
+
+  return(
+  <div>
+      <div className="subjectList">
         <Link to="/booklist/humanities">
-          <p value="subject" onClick={() => props.handleSubject(humanities)}>
+          <p value="subject" onClick={() => props.handleSubject(humanities)}> 
+
             인문
           </p>
         </Link>
@@ -49,32 +51,37 @@ function BookList(props) {
             교양
           </p>
         </Link>
-        {list.map((d) => (
-          <div className="bookList">
-            <div className="bookCard">
-              <BookCard
-                image={d.image}
-                title={d.title}
-                author={d.author}
-                publisher={d.publisher}
-                pubDate={d.pubdate}
-                isbn={d.isbn}
-                subject={d.subject}
-                className={d.className}
-                professor={d.professor}
-                stock={d.stock}
-              />
-              <Link to={`/bookdetail/${d.id}`}>
-                <button value="add" onClick={() => handleAdd(d)}>
-                  자세히
-                </button>
-              </Link>
-            </div>
-          </div>
-        ))}
+
       </div>
-    </>
-  );
+    <div className="bookWrap">
+    {list.map(d => 
+        <div className="bookList">
+          <div className="bookCard">
+            <BookCard
+              image={d.image}
+              title={d.title}
+              author={d.author}
+              publisher={d.publisher}
+              pubDate={d.pubdate}
+              isbn={d.isbn}
+              subject={d.subject}
+              className={d.className}
+              professor={d.professor}
+              stock={d.stock}
+            />
+            <Link to={`/bookdetail/${d.id}`}>
+              <button value="add" onClick={() => handleAdd(d)}>
+                자세히
+              </button>
+            </Link>
+          </div>
+        </div>
+    
+  
+  )
+  }</div></div>)
+
+       
 }
 
 export default BookList;

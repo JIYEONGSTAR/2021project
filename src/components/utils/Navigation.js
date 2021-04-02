@@ -3,12 +3,15 @@ import { Link } from "react-router-dom";
 import "../../css/Navigation.css";
 
 function Navigation() {
+  
   const [thisPage, setThisPage] = useState("");
   return (
     <nav className="navbar">
-      <Link to="/">
-        <h1 className="logo">SHARE_BILLAGE</h1>
-      </Link>
+      <div className="navbar-container">
+        <Link to="/">
+          <h1 className="logo">SHARE_BILLAGE</h1>
+        </Link>
+      </div>
       <div className="navbar-container">
         <Link to="/" className="nav-link" onClick={() => setThisPage("Home")}>
           Home
@@ -42,13 +45,15 @@ function Navigation() {
           notice
         </Link>
       </div>
-      <Link
-        to="/login"
-        className="nav-login"
-        onClick={() => setThisPage("LogIn")}
-      >
-        Login
-      </Link>
+      <div className="navbar-container">
+        <Link
+          to="/login"
+          className="nav-login"
+          onClick={() => setThisPage("LogIn")}
+        >
+          Login
+        </Link>
+      </div>
       <div className="navbar-page">
         <h1>{thisPage}</h1>
       </div>

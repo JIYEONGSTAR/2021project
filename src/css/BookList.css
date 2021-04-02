@@ -1,23 +1,4 @@
-/*
-.bookList {
-  max-width: 90vw;
-  margin: 0 auto;
-  padding: 30px;
-  background-color: green;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
 
-.bookCard {
-  height: 400px;
-  margin: 10px 1em;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: blueviolet;
-  flex: 0 1 20%;
-}
-*/
 body {
   background-color: #FCF6F5;
 }
