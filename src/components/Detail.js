@@ -22,7 +22,6 @@ function Detail(props) {
           author={d.author}
           publisher={d.publisher}
           pubDate={d.pubdate}
-          isbn={d.isbn}
           subject={d.subject}
           className={d.className}
           professor={d.professor}

@@ -15,7 +15,7 @@ function BookCard(props) {
           </p>
           {/* <p>isbn : {props.isbn}</p> */}
           <p>
-            {props.subject} / {props.className} / {props.professor}
+            {props.subject} / {props.professor}
           </p>
           <p>재고 : {props.stock}</p>
         </div>

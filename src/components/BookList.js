@@ -2,24 +2,56 @@ import React from "react";
 import BookCard from "./cards/BookCard";
 
 import { Link } from "react-router-dom";
-
 import "../css/BookList.css";
 // import BookListBySubject from "./BookListBySubject";
 
+
 function BookList(props) {
-  let data = props.data;
+  // let data = props.data;
   let list = props.booklist;
-  console.log("data ");
-  console.log(data);
+  // console.log("data ");
+  // console.log(data);
   console.log("list");
   console.log(list);
+  
 
   const handleAdd = (e) => {
     props.handleBookDetail(e.id);
   };
-
-  return list.map((d) => {
-    return (
+  let IT = "IT융합자율학부";
+  let humanities = "인문융합자율학부";
+  let society = "사회융합자율학부";
+  let mediacontents = "미디어콘텐츠융합자율학부";
+  let culture = "교양";
+return(<>
+<div>
+  <Link to="/booklist/humanities">
+        <p value="subject" onClick={() => props.handleSubject(humanities)}> 
+          인문
+        </p>
+      </Link>
+      <Link to="/booklist/society">
+        <p value="subject" onClick={() => props.handleSubject(society)}>
+          사회
+        </p>
+      </Link>
+      <Link to="/booklist/mediacontents">
+        <p value="subject" onClick={() => props.handleSubject(mediacontents)}>
+          미콘
+        </p>
+      </Link>
+      <Link to="/booklist/IT">
+        <p value="subject" onClick={() => props.handleSubject(IT)}>
+          IT
+        </p>
+      </Link>
+      <Link to="/booklist/culture">
+        <p value="subject" onClick={() => props.handleSubject(culture)}>
+          교양
+        </p>
+      </Link>
+  {list.map(d => 
+     
       <div className="bookList">
         <div className="bookCard">
           <BookCard
@@ -36,14 +68,15 @@ function BookList(props) {
           />
           <Link to={`/bookdetail/${d.id}`}>
             <button value="add" onClick={() => handleAdd(d)}>
-              빌리기
+              자세히
             </button>
           </Link>
-          <p>남아있는 재고={d.stock}</p>
         </div>
       </div>
-    );
-  });
+    
+  
+  )
+  }</div></>)
 }
 
 export default BookList;

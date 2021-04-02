@@ -15,6 +15,9 @@ function mapDispatchToProps(dispatch) {
     handleBookDetail: function (id) {
       dispatch({ type: "bookDetail", id: id });
     },
+    handleSubject: function (sub) {
+      dispatch({ type: "handleSubject", subject: sub });
+    }
   };
 }
 export default connect(mapStateToProps, mapDispatchToProps)(BookList);
