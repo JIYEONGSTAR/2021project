@@ -9,6 +9,7 @@ function reducer(state, action) {
       selected_subject: "",
       bookListBySubject: [],
       myBookList: [],
+      bookDeatil: [],
       data: mockData,
     };
   }
@@ -18,6 +19,7 @@ function reducer(state, action) {
   let newState;
   let newSubject = { selected_subject: action.subject };
   let newID = { selected_id: action.id }; //현재 선택한 값
+  let newBookDetail;
   let targetData = newData.find((currentData) => {
     return currentData.id === newID.selected_id;
   });
@@ -53,6 +55,11 @@ function reducer(state, action) {
       newBookListBySubject = [];
       newBookListBySubject.push(targetDataBySubject);
       break;
+    case "bookDetail":
+      newBookDetail = [];
+      newBookDetail.push(targetData);
+      break;
+
     default:
       break;
   }
@@ -61,6 +68,7 @@ function reducer(state, action) {
     data: newData,
     myBookList: newMyBookList,
     bookListBySubject: newBookListBySubject,
+    bookDeatil: newBookDetail,
   };
   return newState;
 }

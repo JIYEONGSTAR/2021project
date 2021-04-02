@@ -9,6 +9,7 @@ import Notice from "./pages/Notice";
 // import Main from "./components/Main";
 import NotFound from "./pages/NotFound";
 import ListBySubject from "./pages/ListBySubject";
+import BookDetail from "./pages/BookDetail";
 function App() {
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
           <Route path="/setting" component={Setting} />
           <Route path="/notice" component={Notice} />
           <Route path="/booklist/:subject" component={ListBySubject} />
+          <Route path="/bookdetail/:book" component={BookDetail} />
           <Route path="*" component={NotFound} />
         </Switch>
       </Router>

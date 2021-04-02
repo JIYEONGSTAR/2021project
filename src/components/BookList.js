@@ -15,7 +15,7 @@ function BookList(props) {
   console.log(list);
 
   const handleAdd = (e) => {
-    props.handleMyList(e.id);
+    props.handleBookDetail(e.id);
   };
 
   return list.map((d) => {
@@ -34,7 +34,7 @@ function BookList(props) {
             professor={d.professor}
             stock={d.stock}
           />
-          <Link to={"/mypage"}>
+          <Link to={`/bookdetail/${d.id}`}>
             <button value="add" onClick={() => handleAdd(d)}>
               빌리기
             </button>
