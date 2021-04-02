@@ -11,6 +11,9 @@ function mapDispatchToProps(dispatch) {
     handleMyList: function (id) {
       dispatch({ type: "addMyList", id: id });
     },
+    handleSubject: function (sub) {
+      dispatch({ type: "handleSubject", subject: sub });
+    }
   };
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Detail);

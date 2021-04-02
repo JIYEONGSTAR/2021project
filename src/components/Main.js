@@ -11,23 +11,23 @@ function Main(props) {
   return (
     <div className="showBook">
       <Link to="/booklist/humanities">
-        <p value="subject" onClick={() => props.handleSubject(humanities)}>
-          인문융합자율학부
+        <p value="subject" onClick={() => props.handleSubject(humanities)}> 
+          인문
         </p>
       </Link>
       <Link to="/booklist/society">
         <p value="subject" onClick={() => props.handleSubject(society)}>
-          사회융합자율학부
+          사회
         </p>
       </Link>
       <Link to="/booklist/mediacontents">
         <p value="subject" onClick={() => props.handleSubject(mediacontents)}>
-          미디어콘텐츠융합자율학부
+          미콘
         </p>
       </Link>
       <Link to="/booklist/IT">
         <p value="subject" onClick={() => props.handleSubject(IT)}>
-          아이티융합자율학부
+          IT
         </p>
       </Link>
       <Link to="/booklist/culture">

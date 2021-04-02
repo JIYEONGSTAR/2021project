@@ -19,20 +19,33 @@
 }
 */
 
+
+body > div > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+
 .bookList {
-  background-color: green;
+  width: 400px;
+  height: 500px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
 }
 
 .bookCard {
-  width: 400px;
-  height: 500px;
-  margin: 10px 1em;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: blueviolet;
-}
+  width: 300px;
+  height: 400px;
 
-.bookCard:nth-child(1) {
-  background-color: burlywood;
+  background-color: green;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
