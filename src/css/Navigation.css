@@ -1,51 +1,54 @@
 .navbar {
-  width: 100%;
+  width: 100vw;
   height: 64px;
   margin-top: 0;
   position: sticky;
-  background: #eeeeee;
-  z-index: 999;
+  background: #44bd32;
   display: flex;
   justify-content: center;
-  vertical-align: middle;
+  align-items: center;
+}
+
+.navbar-container {
+  width: 33%;
 }
 
 .logo {
-  position: absolute;
-  left: 3%;
-  margin: 15px;
-  color: black;
+  display: flex;
+  justify-content: start;
+  color: #FCF6F5;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 28px;
 }
 
+/*
 .navbar-page {
   display: none;
   position: absolute;
   right: 3%;
 }
+*/
 
 .nav-link {
-  margin-left: 5px;
-  margin-right: 5px;
-  color: black;
+  margin: 0 5px;
+  color: #FCF6F5;
 }
-.navbar-container {
+.navbar-container:nth-child(1) {
   align-items: center;
   position: absolute;
   margin: 20px 0 15px 0;
   display: flex;
 }
 .nav-login {
-  position: absolute;
-  right: 7%;
-  color: black;
+  color: #FCF6F5;
 }
+/*
 .analyze-page {
   right: 1%;
   position: absolute;
-  color: black;
+  color: #FCF6F5;
 }
+*/
