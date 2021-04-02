@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import "../css/BookList.css";
 // import BookListBySubject from "./BookListBySubject";
 
-
 function BookList(props) {
   // let data = props.data;
   let list = props.booklist;
@@ -13,7 +12,6 @@ function BookList(props) {
   // console.log(data);
   console.log("list");
   console.log(list);
-  
 
   const handleAdd = (e) => {
     props.handleBookDetail(e.id);
@@ -23,11 +21,13 @@ function BookList(props) {
   let society = "사회융합자율학부";
   let mediacontents = "미디어콘텐츠융합자율학부";
   let culture = "교양";
+
   return(
   <div>
       <div className="subjectList">
         <Link to="/booklist/humanities">
           <p value="subject" onClick={() => props.handleSubject(humanities)}> 
+
             인문
           </p>
         </Link>
@@ -51,6 +51,7 @@ function BookList(props) {
             교양
           </p>
         </Link>
+
       </div>
     <div className="bookWrap">
     {list.map(d => 
@@ -79,6 +80,8 @@ function BookList(props) {
   
   )
   }</div></div>)
+
+       
 }
 
 export default BookList;
