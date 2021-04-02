@@ -12,6 +12,9 @@ function mapDispatchToProps(dispatch) {
     handleMyList: function (id) {
       dispatch({ type: "addMyList", id: id });
     },
+    handleBookDetail: function (id) {
+      dispatch({ type: "bookDetail", id: id });
+    },
   };
 }
 export default connect(mapStateToProps, mapDispatchToProps)(BookList);
