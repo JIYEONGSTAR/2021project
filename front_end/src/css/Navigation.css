@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+
 .navbar {
   width: 100vw;
-  height: 64px;
-  margin-top: 0;
+  height: 140px;
+  top: 0;
+  left: 0;
   position: sticky;
   background: #44bd32;
   display: flex;
@@ -10,24 +14,66 @@
 }
 
 .navbar-container {
+  display: flex;
+  justify-content: center;
   width: 33%;
+  margin: 50px;
+
+  font-family: "Titillium Web", sans-serif;
+  font-size: 30px;
 }
 
+.navbar-container:first-child {
+  display: flex;
+  justify-content: flex-start;
+  font-family: "Fredoka One", cursive;
+  text-decoration: none;
+}
+
+.navbar-container:nth-child(2) {
+  font-size: 25px;
+}
+
+.navbar-container:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-container a {
+  color: #fcf6f5;
+  text-decoration: none;
+  margin: 0 20px;
+  line-height: 40px;
+}
+.navbar-container a:after {
+  display: block;
+  content: "";
+  border-bottom: solid 2px #fcf6f5;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.navbar-container a:hover:after {
+  transform: scaleX(1);
+}
+/*
+.navbar-container__page:hover {
+  text-decoration: underline;
+}
+*/
+
+/*
 .logo {
   display: flex;
   justify-content: start;
-  color: #FCF6F5;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
+  color: #fcf6f5;
+ font-family: 'Fredoka One', cursive;
+  font-size: 50px;
   line-height: 28px;
 }
 
-
 .nav-link {
   margin: 0 5px;
-  color: #FCF6F5;
+  color: #fcf6f5;
 }
 .navbar-container:nth-child(1) {
   align-items: center;
@@ -36,8 +82,9 @@
   display: flex;
 }
 .nav-login {
-  color: #FCF6F5;
+  color: #fcf6f5;
 }
+
 /*
 .analyze-page {
   right: 1%;

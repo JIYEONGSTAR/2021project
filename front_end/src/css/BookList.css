@@ -1,13 +1,13 @@
-
 body {
-  background-color: #FCF6F5;
+  background-color: #fcf6f5;
 }
 
 .bookWrap {
   display: flex;
   justify-content: center;
   align-items: center;
-} 
+  text-align: center;
+}
 
 .subjectList {
   display: flex;
@@ -16,15 +16,21 @@ body {
 }
 
 .subjectList p {
-  margin: 0 20px;
+  margin: 0 40px;
+  font-size: 20px;
 }
 
 .bookWrap:last-child {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(auto, 1fr);
+  place-items: center;
+  margin: 15px;
 }
 
+.bookList:hover {
+  background-color: rgba(68, 189, 50, 0.2);
+}
 
 .bookList {
   width: 400px;
@@ -40,6 +46,6 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   flex-direction: column;
 }
