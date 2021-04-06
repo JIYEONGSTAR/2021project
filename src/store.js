@@ -1,13 +1,13 @@
-import { createStore } from "redux";
+import { applyMiddleware, createStore } from "redux";
 import _data from "./book.json";
-
+import thunk from "redux-thunk";
 function reducer(state, action) {
   if (state === undefined) {
     let mockData = _data.concat();
     return {
       selected_id: 1,
       selected_subject: "",
-      bookListBySubject: [],
+      bookListBySubject: [mockData],
       myBookList: [],
       bookDeatil: [],
       data: mockData,
@@ -52,8 +52,12 @@ function reducer(state, action) {
       targetData.stock += 1;
       break;
     case "handleSubject":
-      newBookListBySubject = [];
+      newBookListBySubject.pop();
       newBookListBySubject.push(targetDataBySubject);
+      break;
+    case "handleAll":
+      newBookListBySubject.pop();
+      newBookListBySubject.push(newData);
       break;
     case "bookDetail":
       newBookDetail = [];
@@ -75,5 +79,6 @@ function reducer(state, action) {
 
 export default createStore(
   reducer,
+
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
