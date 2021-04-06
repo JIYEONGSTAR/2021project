@@ -1,6 +1,15 @@
-import { applyMiddleware, createStore } from "redux";
+import { applyMiddleware, createStore, compose } from "redux";
 import _data from "./book.json";
+import axios from "../src/axios/axios";
 import thunk from "redux-thunk";
+const getData = () => {
+  const book = [];
+  axios.get("book/all").then((result) => {
+    result.data.forEach((item) => {
+      book.push(item);
+    });
+  });
+};
 function reducer(state, action) {
   if (state === undefined) {
     let mockData = _data.concat();
@@ -10,7 +19,7 @@ function reducer(state, action) {
       bookListBySubject: [mockData],
       myBookList: [],
       bookDeatil: [],
-      data: mockData,
+      data: getData(),
     };
   }
   let newData = [...state.data];
@@ -76,9 +85,6 @@ function reducer(state, action) {
   };
   return newState;
 }
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-export default createStore(
-  reducer,
-
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+export default createStore(reducer, composeEnhancer(applyMiddleware(thunk)));

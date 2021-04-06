@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "../../css/Navigation.css";
 
 function Navigation() {
-  
   const [thisPage, setThisPage] = useState("");
   return (
     <nav className="navbar">
@@ -53,9 +52,13 @@ function Navigation() {
         >
           Login
         </Link>
-      </div>
-      <div className="navbar-page">
-        <h1>{thisPage}</h1>
+        <Link
+          to="/signup"
+          className="nav-signup"
+          onClick={() => setThisPage("signup")}
+        >
+          Login
+        </Link>
       </div>
     </nav>
   );
