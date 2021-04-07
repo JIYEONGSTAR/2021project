@@ -37,7 +37,8 @@ function reducer(state, action) {
   });
   switch (action.type) {
     case "like":
-      targetData.like += 1;
+      if (targetData.like === 0) targetData.like += 1;
+      else if (targetData.like === 1) targetData.like -= 1;
       break;
     case "addMyList":
       if (targetData.stock <= 0) {
