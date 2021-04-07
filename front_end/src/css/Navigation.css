@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+/*
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
+*/
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 
 .navbar {
-  width: 100vw;
-  height: 140px;
+  width: 1903px;
+  height: 120px;
   top: 0;
   left: 0;
   position: sticky;
@@ -19,7 +22,7 @@
   width: 33%;
   margin: 50px;
 
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Do Hyeon", sans-serif;
   font-size: 30px;
 }
 
@@ -48,7 +51,7 @@
 .navbar-container a:after {
   display: block;
   content: "";
-  border-bottom: solid 2px #fcf6f5;
+  border-bottom: solid 3px #fcf6f5;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+/*
+.banner img {
+  width: 100vw;
+  height: 500px;
+}
+*/
+.subjectList {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 50px 0;
+}
+
+.subjectList button {
+  all: unset;
+  font-family: "Do Hyeon", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 25px;
+  width: 100px;
+  height: 60px;
+  border-radius: 50px;
+
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.subjectList button:hover {
+  background-color: #44bd32;
+}
+
+.bookCard button {
+  margin-top: 20px;
+  width: 150px;
+  height: 30px;
+  border: 2px solid #44bd32;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+.bookCard button:hover {
+  text-decoration: none;
+  background-color: #44bd32;
+}

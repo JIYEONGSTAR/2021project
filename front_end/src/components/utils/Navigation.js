@@ -7,35 +7,18 @@ function Navigation() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/">
+        <Link to="/" className="nav-link" onClick={() => setThisPage("Home")}>
           <h1 className="logo">SHARE_BILLAGE</h1>
         </Link>
       </div>
       <div className="navbar-container">
-        <Link to="/" className="nav-link" onClick={() => setThisPage("Home")}>
-          Home
-        </Link>
         <Link
           to="/mypage"
           className="nav-link"
           onClick={() => setThisPage("mypage")}
         >
           mypage
-        </Link>
-        <Link
-          to="/setting"
-          className="nav-link"
-          onClick={() => setThisPage("setting")}
-        >
-          setting
-        </Link>
-        <Link
-          to="/signup"
-          className="nav-link"
-          onClick={() => setThisPage("signup")}
-        >
-          signup
-        </Link>
+        </Link> 
         <Link
           to="/notice"
           className="nav-link"
@@ -57,7 +40,7 @@ function Navigation() {
           className="nav-signup"
           onClick={() => setThisPage("signup")}
         >
-          Login
+          Sign Up
         </Link>
       </div>
     </nav>

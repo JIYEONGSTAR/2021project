@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import BookCard from "./cards/BookCard";
+import BookCard from "./cards/BookCard"; 
+import "../css/Main.css";
 
 import { Link } from "react-router-dom";
 import "../css/BookList.css";
@@ -26,6 +27,9 @@ function Main(props) {
 
   return (
     <>
+      <div className="banner">
+        <img src="/banner2.png" />
+      </div>
       <div className="subjectList">
         <Button
           variant="contained"

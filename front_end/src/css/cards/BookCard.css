@@ -36,4 +36,13 @@
 
 .card_img {
   width: 150px;
+  margin-bottom: 20px;
+}
+
+.cards-items__column h3 {
+  margin-bottom: 10px;
+}
+
+.cards-items__column p {
+  margin-bottom: 5px;
 }
