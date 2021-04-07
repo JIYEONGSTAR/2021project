@@ -5,6 +5,7 @@ import "../css/Main.css";
 import { Link } from "react-router-dom";
 import "../css/BookList.css";
 // import BookListBySubject from "./BookListBySubject";
+import { Button } from "@material-ui/core";
 
 function Main(props) {
   let data = props.data;
@@ -30,15 +31,17 @@ function Main(props) {
         <img src="/banner2.png" />
       </div>
       <div className="subjectList">
-        <button
+        <Button
+          variant="contained"
           value="subject"
           onClick={() => {
             props.handleAll();
           }}
         >
           ALL
-        </button>
-        <button
+        </Button>
+        <Button
+          variant="contained"
           value="subject"
           onClick={() => {
             props.handleSubject(humanities);
@@ -46,8 +49,9 @@ function Main(props) {
           }}
         >
           인문
-        </button>
-        <button
+        </Button>
+        <Button
+          variant="contained"
           value="subject"
           onClick={() => {
             props.handleSubject(society);
@@ -55,8 +59,9 @@ function Main(props) {
           }}
         >
           사회
-        </button>
-        <button
+        </Button>
+        <Button
+          variant="contained"
           value="subject"
           onClick={() => {
             props.handleSubject(mediacontents);
@@ -64,9 +69,10 @@ function Main(props) {
           }}
         >
           미콘
-        </button>
+        </Button>
 
-        <button
+        <Button
+          variant="contained"
           value="subject"
           onClick={() => {
             props.handleSubject(IT);
@@ -74,9 +80,10 @@ function Main(props) {
           }}
         >
           IT
-        </button>
+        </Button>
 
-        <button
+        <Button
+          variant="contained"
           value="subject"
           onClick={() => {
             props.handleSubject(culture);
@@ -84,7 +91,7 @@ function Main(props) {
           }}
         >
           교양
-        </button>
+        </Button>
       </div>
       {booklist ? (
         <div className="bookWrap">

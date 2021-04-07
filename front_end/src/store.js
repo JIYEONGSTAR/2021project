@@ -1,31 +1,25 @@
-import { applyMiddleware, createStore, compose } from "redux";
+import { createStore } from "redux";
 import _data from "./book.json";
-import axios from "../src/axios/axios";
-import thunk from "redux-thunk";
-const getData = () => {
-  const book = [];
-  axios.get("book/all").then((result) => {
-    result.data.forEach((item) => {
-      book.push(item);
-    });
-  });
-};
+import _notice from "./notice.json";
 function reducer(state, action) {
   if (state === undefined) {
     let mockData = _data.concat();
+    let notice = _notice.concat();
     return {
       selected_id: 1,
       selected_subject: "",
       bookListBySubject: [mockData],
       myBookList: [],
       bookDeatil: [],
-      data: getData(),
+      data: mockData,
+      noticeList: notice,
     };
   }
   let newData = [...state.data];
   let newMyBookList = [...state.myBookList];
   let newBookListBySubject = [...state.bookListBySubject];
   let newState;
+  let newNoticeList = [...state.noticeList];
   let newSubject = { selected_subject: action.subject };
   let newID = { selected_id: action.id }; //현재 선택한 값
   let newBookDetail;
@@ -82,9 +76,13 @@ function reducer(state, action) {
     myBookList: newMyBookList,
     bookListBySubject: newBookListBySubject,
     bookDeatil: newBookDetail,
+    noticeList: newNoticeList,
   };
   return newState;
 }
-const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-export default createStore(reducer, composeEnhancer(applyMiddleware(thunk)));
+export default createStore(
+  reducer,
+
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);

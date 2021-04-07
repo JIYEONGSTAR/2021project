@@ -1,7 +1,12 @@
 import React from "react";
+import DisplayNotice from "../containers/DisplayNotice";
 
 function Notice() {
-  return <div>10계명 이거 써야해요</div>;
+  return (
+    <div>
+      <DisplayNotice />
+    </div>
+  );
 }
 
 export default Notice;
