@@ -11,11 +11,14 @@ function BookCard(props) {
         <div class="cards-items__column">
           <h3>{props.title}</h3>
           <p>
-            {props.author} / {props.publisher} / {props.pubDate}
+            {props.author} 저
+          </p>
+          <p>
+            {props.publisher} · {props.pubDate}
           </p>
           {/* <p>isbn : {props.isbn}</p> */}
           <p>
-            {props.subject} / {props.professor}
+            {props.subject} · {props.professor} 교수님
           </p>
           <p>재고 : {props.stock}</p>
         </div>

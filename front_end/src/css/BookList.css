@@ -1,5 +1,7 @@
 body {
   background-color: #fcf6f5;
+  width: 1903px;
+  overflow-x: scroll;
 }
 
 .bookWrap {
@@ -29,7 +31,7 @@ body {
 }
 
 .bookList:hover {
-  background-color: rgba(68, 189, 50, 0.2);
+  background-color: rgba(68, 189, 50, 0.1);
 }
 
 .bookList {
@@ -39,7 +41,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+/*
 .bookCard {
   width: 300px;
   height: 400px;
@@ -49,3 +51,4 @@ body {
   align-items: center;
   flex-direction: column;
 }
+*/
