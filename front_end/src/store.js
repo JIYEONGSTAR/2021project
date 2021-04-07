@@ -1,8 +1,10 @@
 import { createStore } from "redux";
 import _data from "./book.json";
+import _notice from "./notice.json";
 function reducer(state, action) {
   if (state === undefined) {
     let mockData = _data.concat();
+    let notice = _notice.concat();
     return {
       selected_id: 1,
       selected_subject: "",
@@ -10,12 +12,14 @@ function reducer(state, action) {
       myBookList: [],
       bookDeatil: [],
       data: mockData,
+      noticeList: notice,
     };
   }
   let newData = [...state.data];
   let newMyBookList = [...state.myBookList];
   let newBookListBySubject = [...state.bookListBySubject];
   let newState;
+  let newNoticeList = [...state.noticeList];
   let newSubject = { selected_subject: action.subject };
   let newID = { selected_id: action.id }; //현재 선택한 값
   let newBookDetail;
@@ -72,6 +76,7 @@ function reducer(state, action) {
     myBookList: newMyBookList,
     bookListBySubject: newBookListBySubject,
     bookDeatil: newBookDetail,
+    noticeList: newNoticeList,
   };
   return newState;
 }
