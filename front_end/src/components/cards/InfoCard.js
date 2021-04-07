@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Modal, makeStyles } from "@material-ui/core";
+import Alert from "@material-ui/lab/Alert";
 function getModalStyle() {
   const top = 50;
   const left = 50;
@@ -38,10 +39,20 @@ function InfoCard(props) {
   const body = (
     <div style={modalStyle} className={classes.paper}>
       <div id="simple-modal-description">
+        <Alert severity="info">
+          <i class="fas fa-exclamation">대여기간을 지켜주세요</i>
+          <i class="fas fa-exclamation">
+            책에 필기는 X, 강조는 O (단, 노란색 형광펜만)
+          </i>
+          <i class="fas fa-exclamation">
+            강조는 모두를 위해 필요한 곳에만 해주세요
+          </i>
+          <i class="fas fa-exclamation">모두를 위해 확인해주세요</i>
+        </Alert>
+
         <Link to={"/mypage"}>
-          <div>책 손상시키지 마세여~~ 그럼 혼나여~~ 지민이가 혼낼거임;</div>
           <button value="add" onClick={() => props.handleAdd(data)}>
-            빌리기
+            확인
           </button>
         </Link>
       </div>
