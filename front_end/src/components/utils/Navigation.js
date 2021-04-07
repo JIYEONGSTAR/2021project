@@ -18,7 +18,7 @@ function Navigation() {
           onClick={() => setThisPage("mypage")}
         >
           mypage
-        </Link>
+        </Link> 
         <Link
           to="/notice"
           className="nav-link"
