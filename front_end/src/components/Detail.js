@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import BookCard from "./cards/BookCard";
 
 import "../css/BookList.css";
 import InfoCard from "./cards/InfoCard";
+import DetailCard from "./cards/DetailCard";
 
 function Detail(props) {
   let data = props.data;
@@ -23,9 +23,9 @@ function Detail(props) {
 
   return data.map((d) => {
     return (
-      <div className="bookList">
-        <div className="bookCard">
-          <BookCard
+      <div className="detailList">
+        <div className="detailMenu">
+          <DetailCard
             image={d.image}
             title={d.title}
             author={d.author}
@@ -37,7 +37,7 @@ function Detail(props) {
             stock={d.stock}
           />
           <button value="add" onClick={() => handleDetail(d)}>
-            빌리기,세부사항 뜰거임
+            빌리기
           </button>
           {edit ? (
             <InfoCard
@@ -47,7 +47,6 @@ function Detail(props) {
               handleAdd={handleAdd}
             />
           ) : null}
-          <p>남아있는 재고={d.stock}</p>
         </div>
       </div>
     );

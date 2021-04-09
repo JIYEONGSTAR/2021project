@@ -3,7 +3,7 @@ body {
   width: 100vw;
   overflow-x: scroll;
 }
- 
+
 .bookWrap {
   display: flex;
   justify-content: center;

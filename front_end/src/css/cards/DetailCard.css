@@ -1,0 +1,25 @@
+.detailMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.detail__column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+}
+
+.detail_img {
+  width: 200px;
+}
+
+.detail__contents {
+  display: flex;
+  flex-direction: column;
+}
