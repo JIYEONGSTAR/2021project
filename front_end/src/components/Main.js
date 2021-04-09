@@ -1,34 +1,13 @@
-import React, { useState } from "react";
-import BookCard from "./cards/BookCard"; 
+import React from "react";
 import "../css/Main.css";
-
-import { Link } from "react-router-dom";
 import "../css/BookList.css";
-// import BookListBySubject from "./BookListBySubject";
-import { Button } from "@material-ui/core";
-
+import BookList from "../containers/DisplayBookList";
 function Main(props) {
-  let data = props.data;
-  // let [booklist, setBooklist] = useState(props.booklist);
-  let booklist = props.booklist;
-
-  // console.log("data ");
-  // console.log(data);
-  console.log("data");
-  console.log(data);
-  const handleAdd = (e) => {
-    props.handleBookDetail(e.id);
-  };
-  let IT = "IT융합자율학부";
-  let humanities = "인문융합자율학부";
-  let society = "사회융합자율학부";
-  let mediacontents = "미디어콘텐츠융합자율학부";
-  let culture = "교양";
-
+  let data = [props.booklist[0], props.booklist[1], props.booklist[2]];
   return (
     <>
       <div className="banner">
-        <img src="/bannerImg.png" />
+        <img src="/bannerImg.png" alt="" />
       </div>
       <div className="subjectList">
         <Button
@@ -81,7 +60,6 @@ function Main(props) {
         >
           IT
         </Button>
-
         <Button
           variant="contained"
           value="subject"
@@ -93,35 +71,7 @@ function Main(props) {
           교양
         </Button>
       </div>
-      {booklist ? (
-        <div className="bookWrap">
-          {booklist.map((d) => (
-            <div className="bookList">
-              <div className="bookCard">
-                <BookCard
-                  image={d.image}
-                  title={d.title}
-                  author={d.author}
-                  publisher={d.publisher}
-                  pubDate={d.pubdate}
-                  isbn={d.isbn}
-                  subject={d.subject}
-                  className={d.className}
-                  professor={d.professor}
-                  stock={d.stock}
-                />
-                <Link to={`/bookdetail/${d.id}`}>
-                  <button value="add" onClick={() => handleAdd(d)}>
-                    자세히
-                  </button>
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-      ) : (
-        "버튼을 클릭하세요"
-      )}
+      <BookList data={data} />
     </>
   );
 }
