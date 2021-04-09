@@ -13,12 +13,19 @@ function Navigation() {
       </div>
       <div className="navbar-container">
         <Link
+          to="/booklist"
+          className="nav-link"
+          onClick={() => setThisPage("booklist")}
+        >
+          booklist
+        </Link>
+        <Link
           to="/mypage"
           className="nav-link"
           onClick={() => setThisPage("mypage")}
         >
           mypage
-        </Link> 
+        </Link>
         <Link
           to="/notice"
           className="nav-link"

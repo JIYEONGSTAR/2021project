@@ -9,6 +9,7 @@ import Notice from "./pages/Notice";
 // import Main from "./components/Main";
 import NotFound from "./pages/NotFound";
 import BookDetail from "./pages/BookDetail";
+import BookList from "./pages/BookList";
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
           <Route path="/signup" component={Signup} />
           <Route path="/setting" component={Setting} />
           <Route path="/notice" component={Notice} />
+          <Route path="/booklist" component={BookList} />
           <Route path="/bookdetail/:book" component={BookDetail} />
           <Route path="*" component={NotFound} />
         </Switch>

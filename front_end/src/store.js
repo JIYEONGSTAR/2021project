@@ -35,6 +35,9 @@ function reducer(state, action) {
   let targetDataBySubject = newData.filter((currentData) => {
     return currentData.subject === newSubject.selected_subject;
   });
+  let targetDataBySearch = newData.filter((currentData) => {
+    return currentData.title.includes(action.search);
+  });
   switch (action.type) {
     case "like":
       if (targetData.like === 0) targetData.like += 1;
@@ -44,6 +47,7 @@ function reducer(state, action) {
       if (targetData.stock <= 0) {
         alert("더이상 빌릴 수 없습니다");
       } else if (existData === undefined) {
+        alert("대여가 완료되었습니다.");
         newMyBookList.push(targetData);
         targetData.stock -= 1;
       } else {
@@ -58,6 +62,10 @@ function reducer(state, action) {
     case "handleSubject":
       newBookListBySubject.pop();
       newBookListBySubject.push(targetDataBySubject);
+      break;
+    case "handleSearch":
+      newBookListBySubject.pop();
+      newBookListBySubject.push(targetDataBySearch);
       break;
     case "handleAll":
       newBookListBySubject.pop();
@@ -84,6 +92,5 @@ function reducer(state, action) {
 
 export default createStore(
   reducer,
-
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
