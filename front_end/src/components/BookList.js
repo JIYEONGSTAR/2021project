@@ -26,7 +26,6 @@ function BookList(props) {
   let mediacontents = "미디어콘텐츠융합자율학부";
   let culture = "교양";
   let list = data ? data : booklist;
-  console.log(list);
   const handleAdd = (e) => {
     props.handleBookDetail(e.bookId);
   };
@@ -39,7 +38,6 @@ function BookList(props) {
   };
   return (
     <>
-    
       <div className="subjectList">
         {data ? null : (
           <form className={classes.root} noValidate autoComplete="off">

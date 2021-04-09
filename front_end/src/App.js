@@ -6,7 +6,6 @@ import Login from "./pages/Login";
 import Setting from "./pages/Setting";
 import Signup from "./pages/Signup";
 import Notice from "./pages/Notice";
-// import Main from "./components/Main";
 import NotFound from "./pages/NotFound";
 import BookDetail from "./pages/BookDetail";
 import BookList from "./pages/BookList";
