@@ -3,7 +3,6 @@ import BookCard from "./cards/BookCard";
 import { Link } from "react-router-dom";
 function MyList(props) {
   const data = props.data;
-
   const onRemove = (e) => {
     props.handleMyList(e.id);
   };
