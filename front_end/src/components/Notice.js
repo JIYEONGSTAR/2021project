@@ -3,7 +3,6 @@ import NoticeCard from "./cards/NoticeCard";
 
 function Notice(props) {
   let data = props.notice;
-  console.log(data);
 
   return (
     <>
