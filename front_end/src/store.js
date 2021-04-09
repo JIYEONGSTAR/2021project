@@ -1,18 +1,24 @@
 import { applyMiddleware, createStore, compose } from "redux";
+
+import _data from "./book.json";
+
 import _notice from "./notice.json";
 import axios from "./axios/axios";
 import thunk from "redux-thunk";
-const getData = () => {
-  const book = [];
-  axios.get("book/all").then((result) => {
-    result.data.forEach((item) => {
-      book.push(item);
-    });
-  });
-  return book;
-};
+// const getData = () => {
+//   const book = [];
+//   axios.get("book/all").then((result) => {
+//     result.data.forEach((item) => {
+//       book.push(item);
+//     });
+//   });
+//   return book;
+// };
 function reducer(state, action) {
   if (state === undefined) {
+
+    let mockData = _data.concat();
+
     let notice = _notice.concat();
     return {
       selected_id: 1,
@@ -65,8 +71,6 @@ function reducer(state, action) {
       }
       break;
     case "removeMyList":
-      console.log(targetData);
-      console.log(targetIndex);
       newMyBookList.splice(targetIndex, 1);
       targetData.stock += 1;
       break;
@@ -100,7 +104,6 @@ function reducer(state, action) {
   };
   return newState;
 }
-
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 export default createStore(reducer, composeEnhancer(applyMiddleware(thunk)));
