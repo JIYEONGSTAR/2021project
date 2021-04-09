@@ -7,7 +7,7 @@ function Navigation() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="nav-link" onClick={() => setThisPage("Home")}>
+        <Link to="/" className="logo-link" onClick={() => setThisPage("Home")}>
           <img src="/logoImg.png" alt="" />
           <h1 className="logo">SHARE_BILLAGE</h1>
         </Link>

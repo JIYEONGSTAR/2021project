@@ -1,4 +1,10 @@
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 700;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+}
 
 .navbar {
   width: 100vw;
@@ -16,36 +22,35 @@
 .navbar-container {
   display: flex;
   justify-content: center;
+  text-align: center;
   width: 33%;
 
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 30px;
 }
 
-.nav-link:first-child {
+
+.logo-link {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
 }
 
-.nav-link img {
+.logo-link img {
   width: 80px;
 }
 
-.navbar-container:first-child {
+.navbar:first-child {
   display: flex;
   justify-content: flex-start;
-  font-family: 'Nanum Gothic', sans-serif;
-  text-decoration: none;
 }
 
-.navbar-container:nth-child(2) {
+.navbar:nth-child(2) {
   font-size: 25px;
   justify-content: center;
 }
 
-.navbar-container:last-child {
+.navbar:last-child {
   display: flex;
   justify-content: flex-end;
 }
@@ -61,7 +66,7 @@
 .navbar-container:last-child a:after {
   display: block;
   content: "";
-  border-bottom: solid 3px #fcf6f5;
+  border-bottom: solid 3px #44bd32;
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }

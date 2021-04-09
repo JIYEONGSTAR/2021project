@@ -1,28 +1,20 @@
 import { applyMiddleware, createStore, compose } from "redux";
-// import _data from "./book.json";
+import _data from "./book.json";
 import _notice from "./notice.json";
 import axios from "./axios/axios";
 import thunk from "redux-thunk";
-const getData = () => {
-  const book = [];
-  axios.get("book/all").then((result) => {
-    result.data.forEach((item) => {
-      book.push(item);
-    });
-  });
-  return book;
-};
+
 function reducer(state, action) {
   if (state === undefined) {
-    // let mockData = _data.concat();
+    let mockData = _data.concat();
     let notice = _notice.concat();
     return {
       selected_id: 1,
       selected_subject: "",
-      bookListBySubject: [getData()],
+      bookListBySubject: [mockData],
       myBookList: [],
       bookDeatil: [],
-      data: getData(),
+      data: mockData,
       noticeList: notice,
     };
   }
