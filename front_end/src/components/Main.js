@@ -28,7 +28,7 @@ function Main(props) {
   return (
     <>
       <div className="banner">
-        <img src="/banner2.png" />
+        <img src="/bannerImg.png" />
       </div>
       <div className="subjectList">
         <Button

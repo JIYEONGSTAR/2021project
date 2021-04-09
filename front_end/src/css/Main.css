@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
-/*
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
 .banner img {
   width: 100vw;
-  height: 500px;
 }
-*/
+
 .subjectList {
   display: flex;
   justify-content: center;
@@ -13,7 +12,7 @@
 
 .subjectList button {
   all: unset;
-  font-family: "Do Hyeon", sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
 
   display: flex;
   justify-content: center;
@@ -44,4 +43,7 @@
 .bookCard button:hover {
   text-decoration: none;
   background-color: #44bd32;
+}
+.buttonHide {
+  all: unset;
 }

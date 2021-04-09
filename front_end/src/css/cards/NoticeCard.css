@@ -1,7 +1,57 @@
-* {
-  padding: 0;
-  margin: 0;
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.noticeWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 200px;
+  padding: 50px;
+  background-color: white;
+
+  border: 1px solid #44bd32;
+
+  font-family: 'Nanum Gothic', sans-serif;
 }
-.notice-item {
-  background-color: red;
+
+.noticeWrap h1 {
+  font-size: 50px;
+  text-decoration: underline solid 5px #44bd32;
+  
+  margin-bottom: 25px;
+}
+
+.notice-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.notice-column details {
+  margin: 20px;
+  border-style: none;
+}
+
+.notice-column details summary span,
+.notice-column details p span {
+  color: #44bd32;
+  font-size: larger;
+}
+
+.notice-column details summary {
+  font-size: 30px;
+}
+
+details[open] > summary ~ * {
+  margin: 20px;
+  animation:reveal 0.5s;
+}
+
+@keyframes reveal {
+    from { opacity:0; transform:translate3d(0, -30px, 0); }
+    to { opacity:1; transform:translate3d(0, 0, 0); }
 }

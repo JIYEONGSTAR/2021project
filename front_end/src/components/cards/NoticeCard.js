@@ -3,11 +3,14 @@ import React from "react";
 import "../../css/cards/NoticeCard.css";
 function NoticeCard(props) {
   return (
-    <Box boxShadow={3}>
-      <p>{props.id}</p>
-      <div>Q:{props.question}</div>
-      <div>A:{props.answer}</div>
-    </Box>
+    <div className="notice-column">
+      <details>
+        <summary>
+          <span>Q{props.id}.</span> {props.question}
+        </summary>
+        <p><span>A{props.id}.</span> {props.answer}</p>
+      </details>
+    </div>
   );
 }
 
