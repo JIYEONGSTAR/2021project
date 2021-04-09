@@ -6,6 +6,7 @@ function mapStateToProps(state) {
     notice: state.noticeList,
   };
 }
+
 function mapDispatchToProps(dispatch) {
   return {
     handleLike: function (id) {
@@ -28,4 +29,5 @@ function mapDispatchToProps(dispatch) {
     },
   };
 }
+
 export default connect(mapStateToProps, mapDispatchToProps)(BookList);

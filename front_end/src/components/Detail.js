@@ -37,7 +37,7 @@ function Detail(props) {
             stock={d.stock}
           />
           <button value="add" onClick={() => handleDetail(d)}>
-            빌리기,세부사항 뜰거임
+            빌리기
           </button>
           {edit ? (
             <InfoCard

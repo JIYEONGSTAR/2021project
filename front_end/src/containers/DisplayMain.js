@@ -1,7 +1,6 @@
 import { connect } from "react-redux";
 import Main from "../components/Main";
 function mapStateToProps(state) {
-  // return { data: state.bookListBySubject };
   return {
     data: state.data,
     booklist: state.bookListBySubject[0],
