@@ -7,17 +7,18 @@ function DetailCard(props) {
         <img className="detail_img" src={props.image} alt="" />
       </div>
       <div className="detail__column">
-        <div>{props.title}</div>
+        <div className="detail__title">
+          <p>{props.title}</p>
+        </div>
         <div className="detail__contents">
-          <p>저자:{props.author}</p>
-          <p>출판사:{props.publisher}</p>
-          <p>가격:{props.price}</p>
-          <p>출판일:{props.pubDate}</p>
-          <p>
-            재고:{props.stock}/5 학부:{props.subjects}
-          </p>
-          <p>수업명:{props.className}</p>
-          <p>교수:{props.professor}</p>
+          <p><span>저자:</span> {props.author}</p>
+          <p><span>출판사:</span> {props.publisher}</p>
+          <p><span>출판일:</span> {props.pubDate}</p>
+          <p><span>가격:</span> {props.price}</p>
+          <p><span>재고:</span> {props.stock}</p>
+          <p><span>학부:</span> {props.subjects}</p>
+          <p><span>수업명:</span> {props.className}</p>
+          <p><span>교수:</span> {props.professor}</p>
         </div>
       </div>
     </div>

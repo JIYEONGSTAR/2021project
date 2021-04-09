@@ -31,6 +31,7 @@ function Detail(props) {
             author={d.author}
             publisher={d.publisher}
             pubDate={d.pubdate}
+            price={d.price}
             subject={d.subject}
             className={d.className}
             professor={d.professor}

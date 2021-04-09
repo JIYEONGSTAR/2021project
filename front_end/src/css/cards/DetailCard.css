@@ -1,25 +1,76 @@
-.detailMenu {
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.detailList {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 80px;
 }
+
+.detailMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  padding: 50px;
+  background-color: white;
+  border: 1px solid #44bd32;
+}
+
+.detailMenu button {
+  width: 40vw;
+  height: 50px;
+  margin: 40px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 20px;
+  border: 1px solid #44bd32;
+  background-color: rgba(68, 189, 50, 0.1);
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.detailMenu button:hover {
+  background-color: #44bd32;
+  color: white;
+}
+
 .detail_wrap {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 100px;
+  font-family: 'Nanum Gothic', sans-serif;
 }
+
 .detail__column {
   display: flex;
   flex-direction: column;
-  margin: 0 50px;
+  margin: 50px;
+}
+
+.detail__title {
+  margin-bottom: 30px;
+}
+
+.detail__title p {
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .detail_img {
-  width: 200px;
+  width: 250px;
 }
 
 .detail__contents {
   display: flex;
   flex-direction: column;
 }
+
+.detail__contents p {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.detail__contents p span {
+  font-weight: 700;
+}
+
