@@ -1,7 +1,10 @@
 /* Social Icons */
 .footer {
-  background-color: black;
+  background-color: #44bd32;
   display: flex;
+  justify-content: center;
+
+  height: 10vh;
 }
 
 .social-icon-link {
@@ -20,7 +23,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: 100vw;
+  height: 10vh;
+
   max-width: 1000px;
 }
 

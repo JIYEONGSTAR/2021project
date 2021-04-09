@@ -119,7 +119,7 @@ function BookList(props) {
                     publisher={d.publisher}
                     pubDate={d.pubdate}
                     isbn={d.isbn}
-                    subject={d.subject}
+                    subject={d.subjects}
                     className={d.className}
                     professor={d.professor}
                     stock={d.stock}

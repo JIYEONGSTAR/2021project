@@ -1,14 +1,17 @@
 @import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 @font-face {
-  font-family: 'LotteMartDream';
+  font-family: "LotteMartDream";
   font-style: normal;
   font-weight: 700;
-  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff') format('woff');
+  src: url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff2")
+      format("woff2"),
+    url("//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamBold.woff")
+      format("woff");
 }
 
 .navbar {
   width: 100vw;
-  height: 120px;
+  height: 80px;
   top: 0;
   left: 0;
   position: sticky;
@@ -25,10 +28,9 @@
   text-align: center;
   width: 33%;
 
-  font-family: 'Nanum Gothic', sans-serif;
-  font-size: 30px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 20px;
 }
-
 
 .logo-link {
   display: flex;
@@ -37,7 +39,7 @@
 }
 
 .logo-link img {
-  width: 80px;
+  width: 60px;
 }
 
 .navbar:first-child {

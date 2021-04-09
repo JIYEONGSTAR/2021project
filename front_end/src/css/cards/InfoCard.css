@@ -1,0 +1,41 @@
+.simple-modal__wrap {
+  display: flex;
+  width: 50vw;
+}
+
+.simple-modal-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.modal-info i {
+  font-size: 25px;
+  height: 80px;
+}
+
+.simple-modal-description a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.simple-modal-description a button {
+  all: unset;
+  width: 10vw;
+  height: 40px;
+  margin: 20px 0 10px 0;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 20px;
+  border: 1px solid #44bd32;
+  color: black;
+  background-color: rgba(68, 189, 50, 0.1);
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.simple-modal-description a button:hover {
+  background-color: #44bd32;
+  color: white;
+}
