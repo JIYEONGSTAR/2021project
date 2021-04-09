@@ -1,9 +1,9 @@
 body {
   background-color: #fcf6f5;
-  width: 1903px;
+  width: 100vw;
   overflow-x: scroll;
 }
- 
+
 .bookWrap {
   display: flex;
   justify-content: center;

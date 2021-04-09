@@ -65,6 +65,8 @@ function reducer(state, action) {
       }
       break;
     case "removeMyList":
+      console.log(targetData);
+      console.log(targetIndex);
       newMyBookList.splice(targetIndex, 1);
       targetData.stock += 1;
       break;
