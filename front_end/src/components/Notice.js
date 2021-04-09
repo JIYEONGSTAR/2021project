@@ -5,7 +5,7 @@ function Notice(props) {
   let data = props.notice;
 
   return (
-    <>
+    <div className="noticeWrap">
       <h1>Notice</h1>
       {data.map((d) => {
         return (
@@ -14,7 +14,7 @@ function Notice(props) {
           </div>
         );
       })}
-    </>
+    </div>
   );
 }
 
