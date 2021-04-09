@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.mapper.ModelMapper;
 import com.example.demo.model.BookModel;
+import com.example.demo.model.NoticeModel;
 import com.example.demo.model.UserModel;
 
 @CrossOrigin(origins = "*") 
@@ -27,6 +28,10 @@ private ModelMapper mapper;
 	@GetMapping("/book/all")
 	public List<BookModel> getBookListAll(){
 		return mapper.getBookModel();
+	}
+	@GetMapping("/notice/all")
+	public List<NoticeModel> getNoticeListAll(){
+		return mapper.getNoticeModel();
 	}
 	
 	public void setMapper(ModelMapper mapper) {

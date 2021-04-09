@@ -1,7 +1,7 @@
 /* Social Icons */
 .footer {
   background-color: black;
-  text-align: center;
+  display: flex;
 }
 
 .social-icon-link {
@@ -11,7 +11,9 @@
 
 .social-media {
   max-width: 1000px;
-  width: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
 }
 
 .social-media-wrap {
@@ -20,7 +22,6 @@
   align-items: center;
   width: 90%;
   max-width: 1000px;
-  margin: 40px auto 0 auto;
 }
 
 .social-icons {
@@ -40,6 +41,12 @@
   display: flex;
   align-items: center;
   margin-bottom: 16px;
+}
+
+.social-logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .website-rights {

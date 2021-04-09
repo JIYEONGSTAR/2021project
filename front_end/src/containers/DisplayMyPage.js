@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import MyList from "../components/MyList";
 function mapStateToProps(state) {
-  return { data: state.myBookList };
+  return { data: state.myBookList, likeData: state.myLikeList };
 }
 function mapDispatchToProps(dispatch) {
   return {

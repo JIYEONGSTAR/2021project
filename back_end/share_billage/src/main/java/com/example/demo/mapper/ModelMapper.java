@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import com.example.demo.model.BookModel;
+import com.example.demo.model.NoticeModel;
 import com.example.demo.model.UserModel;
 
 @Mapper
@@ -16,5 +17,6 @@ public interface ModelMapper {
 	@Select("select * from book")
 	List<BookModel> getBookModel();
 	
-	
+	@Select("select * from notice")
+	List<NoticeModel> getNoticeModel();
 }

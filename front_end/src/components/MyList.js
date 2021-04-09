@@ -1,8 +1,8 @@
 import React from "react";
-import BookCard from "./cards/BookCard";
 import { Link } from "react-router-dom";
 import "../css/BookList.css";
 import "../css/Main.css";
+import DetailCard from "./cards/DetailCard";
 function MyList(props) {
   const data = props.data;
   const onRemove = (e) => {
@@ -11,15 +11,15 @@ function MyList(props) {
   return data.map((d) => {
     return (
       <div>
-        <div className="bookList">
-          <div className="bookCard">
-            <BookCard
+        <div className="detailList">
+          <div className="detailMenu">
+            <DetailCard
               image={d.image}
               title={d.title}
               author={d.author}
               publisher={d.publisher}
               pubDate={d.pubdate}
-              isbn={d.isbn}
+              price={d.price}
               subject={d.subject}
               className={d.className}
               professor={d.professor}
