@@ -1,25 +1,32 @@
 import { applyMiddleware, createStore, compose } from "redux";
 
-import _data from "./book.json";
+// import _data from "./book.json";
+// import _notice from "./notice.json";
 
-import _notice from "./notice.json";
 import axios from "./axios/axios";
 import thunk from "redux-thunk";
-// const getData = () => {
-//   const book = [];
-//   axios.get("book/all").then((result) => {
-//     result.data.forEach((item) => {
-//       book.push(item);
-//     });
-//   });
-//   return book;
-// };
+const getData = () => {
+  const book = [];
+  axios.get("book/all").then((result) => {
+    result.data.forEach((item) => {
+      book.push(item);
+    });
+  });
+  return book;
+};
+const getNotice = () => {
+  const notice = [];
+  axios.get("notice/all").then((result) => {
+    result.data.forEach((item) => {
+      notice.push(item);
+    });
+  });
+  return notice;
+};
 function reducer(state, action) {
   if (state === undefined) {
-
-    let mockData = _data.concat();
-
-    let notice = _notice.concat();
+    // let mockData = _data.concat();
+    // let notice = _notice.concat();
     return {
       selected_id: 1,
       selected_subject: "",
@@ -27,7 +34,7 @@ function reducer(state, action) {
       myBookList: [],
       bookDeatil: [],
       data: getData(),
-      noticeList: notice,
+      noticeList: getNotice(),
     };
   }
   let newData = [...state.data];
@@ -38,6 +45,7 @@ function reducer(state, action) {
   let newSubject = { selected_subject: action.subject };
   let newID = { selected_id: action.id }; //현재 선택한 값
   let newBookDetail;
+
   let targetData = newData.find((currentData) => {
     return currentData.bookId === newID.selected_id;
   });
@@ -53,11 +61,13 @@ function reducer(state, action) {
   let targetDataBySearch = newData.filter((currentData) => {
     return currentData.title.includes(action.search);
   });
+
   switch (action.type) {
     case "like":
       targetData.likeNum === 0
         ? (targetData.likeNum += 1)
         : (targetData.likeNum -= 1);
+
       break;
     case "addMyList":
       if (targetData.stock <= 0) {
