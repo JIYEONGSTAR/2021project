@@ -20,8 +20,6 @@ function BookList(props) {
   const classes = useStyles();
   let data = props.data;
   let booklist = props.booklist;
-  console.log("data");
-  console.log(data);
   let IT = "IT융합자율학부";
   let humanities = "인문융합자율학부";
   let society = "사회융합자율학부";
@@ -30,10 +28,10 @@ function BookList(props) {
   let list = data ? data : booklist;
   console.log(list);
   const handleAdd = (e) => {
-    props.handleBookDetail(e.id);
+    props.handleBookDetail(e.bookId);
   };
   const handleLike = (e) => {
-    props.handleLike(e.id);
+    props.handleLike(e.bookId);
   };
   const handleChange = (e) => {
     console.log(e.target.value);
@@ -42,15 +40,18 @@ function BookList(props) {
   return (
     <>
       <div className="subjectList">
-        <Button
-          variant="contained"
-          value="subject"
-          onClick={() => {
-            props.handleAll();
-          }}
-        >
-          ALL
-        </Button>
+        {data ? null : (
+          <Button
+            variant="contained"
+            value="subject"
+            onClick={() => {
+              props.handleAll();
+            }}
+          >
+            ALL
+          </Button>
+        )}
+
         <Button
           variant="contained"
           value="subject"
@@ -99,13 +100,15 @@ function BookList(props) {
       </div>
       {list ? (
         <>
-          <form className={classes.root} noValidate autoComplete="off">
-            <TextField
-              id="standard-basic"
-              label="제목을 입력하세요"
-              onChange={handleChange}
-            />
-          </form>
+          {data ? null : (
+            <form className={classes.root} noValidate autoComplete="off">
+              <TextField
+                id="standard-basic"
+                label="제목을 입력하세요"
+                onChange={handleChange}
+              />
+            </form>
+          )}
           <div className="bookWrap">
             {list.map((d) => (
               <div className="bookList">
@@ -123,13 +126,12 @@ function BookList(props) {
                     stock={d.stock}
                   />
                   <button className="buttonHide" onClick={() => handleLike(d)}>
-                    {d.like === 0 ? (
+                    {d.likeNum === 0 ? (
                       <i class="far fa-thumbs-up"></i>
                     ) : (
                       <i class="fas fa-thumbs-up"></i>
                     )}
                   </button>
-
                   <Link to={`/bookdetail/${d.id}`}>
                     <button value="add" onClick={() => handleAdd(d)}>
                       자세히

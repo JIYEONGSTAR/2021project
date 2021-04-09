@@ -1,11 +1,8 @@
-import React, { useState } from "react"; 
+import React, { useState } from "react";
 import BookCard from "./cards/BookCard";
-
-import { Link } from "react-router-dom";
 
 import "../css/BookList.css";
 import InfoCard from "./cards/InfoCard";
-// import BookListBySubject from "./BookListBySubject";
 
 function Detail(props) {
   let data = props.data;
@@ -21,7 +18,7 @@ function Detail(props) {
     setOpen(false);
   };
   const handleAdd = (e) => {
-    props.handleMyList(e.id);
+    props.handleMyList(e.bookId);
   };
 
   return data.map((d) => {

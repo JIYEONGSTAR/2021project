@@ -1,17 +1,28 @@
-import { createStore } from "redux";
-import _data from "./book.json";
+import { applyMiddleware, createStore, compose } from "redux";
+// import _data from "./book.json";
 import _notice from "./notice.json";
+import axios from "./axios/axios";
+import thunk from "redux-thunk";
+const getData = () => {
+  const book = [];
+  axios.get("book/all").then((result) => {
+    result.data.forEach((item) => {
+      book.push(item);
+    });
+  });
+  return book;
+};
 function reducer(state, action) {
   if (state === undefined) {
-    let mockData = _data.concat();
+    // let mockData = _data.concat();
     let notice = _notice.concat();
     return {
       selected_id: 1,
       selected_subject: "",
-      bookListBySubject: [mockData],
+      bookListBySubject: [getData()],
       myBookList: [],
       bookDeatil: [],
-      data: mockData,
+      data: getData(),
       noticeList: notice,
     };
   }
@@ -24,24 +35,25 @@ function reducer(state, action) {
   let newID = { selected_id: action.id }; //현재 선택한 값
   let newBookDetail;
   let targetData = newData.find((currentData) => {
-    return currentData.id === newID.selected_id;
+    return currentData.bookId === newID.selected_id;
   });
   let targetIndex = newMyBookList.findIndex(
-    (currentData) => currentData.id === newID.selected_id
+    (currentData) => currentData.bookId === newID.selected_id
   );
   let existData = newMyBookList.find((currentData) => {
-    return currentData.id === newID.selected_id;
+    return currentData.bookId === newID.selected_id;
   });
   let targetDataBySubject = newData.filter((currentData) => {
-    return currentData.subject === newSubject.selected_subject;
+    return currentData.subjects === newSubject.selected_subject;
   });
   let targetDataBySearch = newData.filter((currentData) => {
     return currentData.title.includes(action.search);
   });
   switch (action.type) {
     case "like":
-      if (targetData.like === 0) targetData.like += 1;
-      else if (targetData.like === 1) targetData.like -= 1;
+      targetData.likeNum === 0
+        ? (targetData.likeNum += 1)
+        : (targetData.likeNum -= 1);
       break;
     case "addMyList":
       if (targetData.stock <= 0) {
@@ -53,7 +65,6 @@ function reducer(state, action) {
       } else {
         alert("이미 담겨 잇습니다.");
       }
-      // newMyBookList.push(targetData);
       break;
     case "removeMyList":
       newMyBookList.splice(targetIndex, 1);
@@ -89,8 +100,6 @@ function reducer(state, action) {
   };
   return newState;
 }
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-export default createStore(
-  reducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
+export default createStore(reducer, composeEnhancer(applyMiddleware(thunk)));
