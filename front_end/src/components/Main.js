@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/Main.css";
-// import "../css/BookList.css";
 import BookList from "../containers/DisplayBookList";
 import ServiceCard from "./cards/ServiceCard";
 
