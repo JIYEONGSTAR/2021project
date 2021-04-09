@@ -56,7 +56,10 @@
 }
 
 .service {
-  background-color: #44bd32;
+  text-align: center;
+  background-color: white;
+  margin-top: 40px;
+  padding: 60px;
 }
 .service__card {
   display: grid;
@@ -64,4 +67,9 @@
   grid-template-rows: repeat(auto, 1fr);
   place-items: center;
   margin: 15px;
+}
+.service p {
+  font-size: 50px;
+  margin-bottom: 50px;
+  text-decoration: underline solid #44bd32;
 }

@@ -13,12 +13,12 @@ function Main(props) {
       </div>
       <BookList data={data} />
       <div className="service">
-        추후서비스
+        <p>추후서비스</p>
         <div className="service__card">
-          <ServiceCard image={"/1.png"} />
-          <ServiceCard image={"/2.png"} />
-          <ServiceCard image={"3.png"} />
-          <ServiceCard image={"4.png"} />
+          <ServiceCard image="/future1.jpg" />
+          <ServiceCard image="/future2.jpg" />
+          <ServiceCard image="/future3.jpg" />
+          <ServiceCard image="/future4.jpg" />
         </div>
       </div>
     </>

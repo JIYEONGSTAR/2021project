@@ -27,19 +27,19 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(auto, 1fr);
   place-items: center;
-  margin: 15px;
-}
-
-.bookList:hover {
-  background-color: rgba(68, 189, 50, 0.1);
+  margin: 15px 5vw;
 }
 
 .bookList {
-  width: 400px;
+  width: 350px;
   height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #44bd32;
+  margin-bottom: 40px;
 }
 /*
 .bookCard {
