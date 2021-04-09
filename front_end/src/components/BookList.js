@@ -33,11 +33,10 @@ function BookList(props) {
     props.handleLike(e.bookId);
   };
   const handleChange = (e) => {
-    console.log(e.target.value);
     props.handleSearch(e.target.value);
   };
   return (
-    <>
+    <div className="booklist">
       <div className="subjectList">
         {data ? null : (
           <form className={classes.root} noValidate autoComplete="off">
@@ -126,12 +125,12 @@ function BookList(props) {
                   />
                   <button className="buttonHide" onClick={() => handleLike(d)}>
                     {d.likeNum === 0 ? (
-                      <i class="far fa-thumbs-up"></i>
+                      <i className="far fa-thumbs-up"></i>
                     ) : (
-                      <i class="fas fa-thumbs-up"></i>
+                      <i className="fas fa-thumbs-up"></i>
                     )}
                   </button>
-                  <Link to={`/bookdetail/${d.id}`}>
+                  <Link to={`/bookdetail`}>
                     <button value="add" onClick={() => handleAdd(d)}>
                       자세히
                     </button>
@@ -144,7 +143,7 @@ function BookList(props) {
       ) : (
         "버튼을 클릭하세요"
       )}
-    </>
+    </div>
   );
 }
 

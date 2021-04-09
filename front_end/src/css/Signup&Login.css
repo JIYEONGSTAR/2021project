@@ -1,0 +1,113 @@
+.signup {
+  display: flex;
+  justify-content: center;
+}
+
+.join {
+  height: 100vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  left: 5%;
+  margin: 100px 0;
+}
+
+.join__column {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.join__column fieldset {
+  border: none;
+  margin: 30px;
+}
+
+.join__column legend {
+  font-size: 20px;
+}
+
+.join__column input,
+.join__column select {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+}
+
+.join__column input {
+  border: 1px solid #44bd32;
+}
+
+.join__column select {
+  margin-bottom: 10px;
+  box-shadow: 0 0 0 1px #44bd32;
+}
+
+.join__column input:focus,
+.join__column select:focus {
+  outline: none;
+  background-color: rgb(242, 237, 215);
+  box-shadow: 0 0 0 2px #44bd32;
+}
+
+.join__column select option {
+  border-radius: 10px;
+}
+
+#join-submit {
+  margin: 30px 0;
+  width: 25vw;
+  height: 50px;
+  background-color: white;
+  border: 2px solid #44bd32;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+#join-submit:hover {
+  background-color: #44bd32;
+  color: white;
+  cursor: pointer;
+}
+
+hr {
+  color: black;
+  width: 50vw;
+}
+
+.join__column__other-join {
+  display: flex;
+  flex-direction: column;
+}
+
+.join__column__other-join button {
+  margin: 10px 0;
+  width: 30vw;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.join__column__other-join button:nth-child(2) {
+  background-color: rgb(224, 224, 224);
+}
+
+.join__column__other-join button:nth-child(2):hover {
+  background-color: white;
+  border: 2px solid rgb(224, 224, 224);
+  cursor: pointer;
+}
+
+.join__column__other-join button:last-child {
+  background-color: #44bd32;
+}
+
+.join__column__other-join button:last-child:hover {
+  background-color: white;
+  border: 2px solid #44bd32;
+  cursor: pointer;
+}

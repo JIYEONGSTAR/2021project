@@ -1,8 +1,5 @@
 import { applyMiddleware, createStore, compose } from "redux";
 
-// import _data from "./book.json";
-// import _notice from "./notice.json";
-
 import axios from "./axios/axios";
 import thunk from "redux-thunk";
 const getData = () => {
@@ -25,8 +22,6 @@ const getNotice = () => {
 };
 function reducer(state, action) {
   if (state === undefined) {
-    // let mockData = _data.concat();
-    // let notice = _notice.concat();
     return {
       selected_id: 1,
       selected_subject: "",
@@ -77,10 +72,11 @@ function reducer(state, action) {
         newMyBookList.push(targetData);
         targetData.stock -= 1;
       } else {
-        alert("이미 담겨 잇습니다.");
+        alert("이미 담겨 있습니다.");
       }
       break;
     case "removeMyList":
+      alert("반납하시겠습니까?");
       newMyBookList.splice(targetIndex, 1);
       targetData.stock += 1;
       break;

@@ -22,7 +22,7 @@ function App() {
           <Route path="/setting" component={Setting} />
           <Route path="/notice" component={Notice} />
           <Route path="/booklist" component={BookList} />
-          <Route path="/bookdetail/:book" component={BookDetail} />
+          <Route path="/bookdetail" component={BookDetail} />
           <Route path="*" component={NotFound} />
         </Switch>
       </Router>
