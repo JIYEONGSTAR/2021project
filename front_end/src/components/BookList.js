@@ -39,7 +39,17 @@ function BookList(props) {
   };
   return (
     <>
+    
       <div className="subjectList">
+        {data ? null : (
+          <form className={classes.root} noValidate autoComplete="off">
+            <TextField
+              id="standard-basic"
+              label="제목을 입력하세요"
+              onChange={handleChange}
+            />
+          </form>
+        )}
         {data ? null : (
           <Button
             variant="contained"
@@ -100,15 +110,6 @@ function BookList(props) {
       </div>
       {list ? (
         <>
-          {data ? null : (
-            <form className={classes.root} noValidate autoComplete="off">
-              <TextField
-                id="standard-basic"
-                label="제목을 입력하세요"
-                onChange={handleChange}
-              />
-            </form>
-          )}
           <div className="bookWrap">
             {list.map((d) => (
               <div className="bookList">
